@@ -5,6 +5,8 @@ import { useNavigate } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
 import Home from "./components/Home/Home";
 import Info from "./components/Info/Info";
+import VerDetalle from "./components/VerDetalle/VerDetalle";
+import EditarInmueble from "./components/Editar/EditarInmueble";
 
 import Box from "@mui/material/Box";
 import BottomNavigation from "@mui/material/BottomNavigation";
@@ -52,6 +54,8 @@ function App() {
         <Routes>
           <Route path="/Home" element={<Home />} />
           <Route path="/Info" element={<Info />} />
+          <Route path="/VerDetalle/:id" element={<VerDetalle />} />
+          <Route path="/EditarInmueble/:id" element={<EditarInmueble />} />
         </Routes>
       </div>
     </div>
